@@ -2,6 +2,14 @@
 using namespace std;
 
 int main() {
+    // --- Part 1: Syntax & Variables Answers ---
+    // Q1: cout << "Enter your age: ";
+    // Q2: int score = 100;
+    // Q3: int age = 20;
+    // Q4: int num; cin >> num;
+    // Q5: int firstNumber = 10;
+
+    // --- Part 2: Calculator Program ---
     double num1, num2;
     cout << "Enter first number: ";
     cin >> num1;
