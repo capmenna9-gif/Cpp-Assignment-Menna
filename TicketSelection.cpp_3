@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    cout << "\n--- TICKET MENU ---\n";
+    cout << "1. Regular Ticket - 100 EGP\n";
+    cout << "2. VIP Ticket - 250 EGP\n";
+    cout << "3. Unlimited Pass - 400 EGP\n";
+    
+    int ticketType;
+    cout << "Select Ticket Type (1-3): ";
+    cin >> ticketType;
+
+    double price = 0;
+
+    switch (ticketType) {
+        case 1:
+            price = 100;
+            cout << "Selected: Regular Ticket (100 EGP)\n";
+            break;
+        case 2:
+            price = 250;
+            cout << "Selected: VIP Ticket (250 EGP)\n";
+            break;
+        case 3:
+            price = 400;
+            cout << "Selected: Unlimited Pass (400 EGP)\n";
+            break;
+        default:
+            price = 100;
+            cout << "Invalid choice! Defaulting to Regular Ticket (100 EGP)\n";
+            break;
+    }
+
+    return 0;
+}
