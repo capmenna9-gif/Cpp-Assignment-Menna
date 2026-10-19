@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    string name = "Abdalla Alaa";
+    string phone = "01012345678";
+    int count = 3;
+    double subtotal = 750;
+    string status = "20% Membership Discount Applied";
+    double finalTotal = 600;
+
+    cout << "\n------------------------------------\n";
+    cout << "              FINAL RECEIPT         \n";
+    cout << "------------------------------------\n";
+    cout << "Customer Name     : " << name << "\n";
+    cout << "Phone Number      : " << phone << "\n";
+    cout << "Ticket Quantity   : " << count << "\n";
+    cout << "Subtotal Price    : " << subtotal << " EGP\n";
+    cout << "Discount Status   : " << status << "\n";
+    cout << "------------------------------------\n";
+    cout << "TOTAL PAYABLE     : " << finalTotal << " EGP\n";
+    cout << "------------------------------------\n";
+    cout << "Thank you for visiting Fantasy Park! Have fun!\n";
+
+    return 0;
+}
