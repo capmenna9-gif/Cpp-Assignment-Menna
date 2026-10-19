@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    double price = 250; // مثال سعر تذكرة سابقة
+    int count;
+    cout << "Enter Number of Tickets: ";
+    cin >> count;
+
+    int isMember;
+    cout << "Do you have a Membership? (1 for Yes / 0 for No): ";
+    cin >> isMember;
+
+    double subtotal = price * count;
+    double discount = 0;
+    string status = "";
+
+    if (isMember == 1) {
+        discount = subtotal * 0.20;
+        status = "20% Membership Discount Applied";
+    } else {
+        discount = 0;
+        status = "No Discount Applied";
+    }
+
+    double finalTotal = subtotal - discount;
+
+    cout << "Subtotal: " << subtotal << " EGP\n";
+    cout << "Status: " << status << "\n";
+    cout << "Total Payable: " << finalTotal << " EGP\n";
+
+    return 0;
+}
